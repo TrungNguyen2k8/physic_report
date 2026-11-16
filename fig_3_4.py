@@ -77,8 +77,7 @@ ax1.tick_params(axis='x', labelsize=10)
 ax1.legend(loc='upper right', frameon=True, fontsize=9.5)
 
 plt.tight_layout()
-plt.savefig('Figure_3_Mechanical_Work.png', dpi=300)
-plt.show()
+plt.savefig('Fig_3_Mechanical_Work.png', dpi=300)
 
 # ==========================================
 # TẠO FIGURE 4: MECHANICAL POWER SURGE
@@ -126,8 +125,7 @@ ax2.text(
 )
 
 ax2.set_title(
-    'Mechanical Power Surge from Walk to Run\nMean Power $\\pm$ 1 SD (+107.0%,'
-    ' $t(8) = 13.24$)',
+    'Mechanical Power Surge from Walk to Run\nMean Power $\\pm$ 1 SD (+107.0%)',
     fontsize=11.5,
     fontweight='bold',
     color='#1a365d',
@@ -146,5 +144,4 @@ ax2.spines['right'].set_visible(False)
 ax2.tick_params(axis='x', labelsize=10)
 
 plt.tight_layout()
-plt.savefig('Figure_4_Mechanical_Power.png', dpi=300)
-plt.show()
+plt.savefig('Fig_4_Mechanical_Power.png', dpi=300)

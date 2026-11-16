@@ -25,7 +25,7 @@ bbox_orange = dict(boxstyle='round,pad=0.45', facecolor='white', edgecolor='#337
 text_box_3 = (
     "Center of Mass Ascent Trajectory\n"
     r"$m = 68.50\,\mathrm{kg},\ g = 9.80\,\mathrm{m/s^2}$" + "\n"
-    r"Gravitational Force: $P = mg = 671.30\,\mathrm{N}$"
+    r"Gravitational Force: $F_g = mg = 671.30\,\mathrm{N}$"
 )
 ax.text(3.8, 1.7, text_box_3,
         fontsize=9.5, fontweight='bold', color='#1B365D', ha='center', va='center',
@@ -33,7 +33,7 @@ ax.text(3.8, 1.7, text_box_3,
 
 # 4. Khung chữ nền xanh đậm phía trên (Dùng \mathbf cho công thức in đậm trên nền tối)
 bbox_dark = dict(boxstyle='round,pad=0.45', facecolor='#1B365D', edgecolor='none')
-text_box_4 = r"MECHANICAL WORK: $\mathbf{W = Ph = 1,208.34\,\mathrm{J}}$"
+text_box_4 = r"MECHANICAL WORK: $\mathbf{W = F_g h = 1,208.34\,\mathrm{J}}$"
 ax.text(3.8, 1.95, text_box_4,
         fontsize=9.5, fontweight='bold', color='white', ha='center', va='center',
         bbox=bbox_dark, zorder=5)
@@ -61,5 +61,4 @@ ax.spines['right'].set_visible(False)
 plt.tight_layout()
 
 # Xuất file PNG nét cao hoặc SVG (vector không vỡ nét khi zoom trong Word)
-plt.savefig('staircase_schematic.svg', format='svg', bbox_inches='tight')
-plt.savefig('staircase_schematic.png', dpi=300, bbox_inches='tight')
+plt.savefig('Fig_2_Staircase_schematic.png', dpi=300, bbox_inches='tight')

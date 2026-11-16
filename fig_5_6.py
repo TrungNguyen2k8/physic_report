@@ -132,7 +132,7 @@ ax1.spines['right'].set_visible(False)
 ax1.legend(loc='upper right', frameon=True, fontsize=9.5)
 
 plt.tight_layout()
-plt.savefig('Figure_5_Trial_Time.png', dpi=300)
+plt.savefig('Fig_5_Trial_Time.png', dpi=300)
 
 # ==========================================================
 # HÌNH 2 (FIGURE 6): MECHANICAL POWER OUTPUT ACROSS 5 TRIALS
@@ -243,4 +243,4 @@ ax2.spines['right'].set_visible(False)
 ax2.legend(loc='lower right', frameon=True, fontsize=9.5)
 
 plt.tight_layout()
-plt.savefig('Figure_6_Trial_Power.png', dpi=300)
+plt.savefig('Fig_6_Trial_Power.png', dpi=300)
