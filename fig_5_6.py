@@ -19,7 +19,7 @@ timing_error = 0.10
 
 # Công suất (W) - Đã sửa Trial 5 của Run thành 302.48 W và Mean thành 154.68 W / 320.17 W
 walk_power = [157.34, 153.93, 154.92, 152.38, 154.92]
-run_power = [368.40, 329.25, 302.84, 307.47, 302.48]
+run_power = [368.40, 329.25, 302.84, 307.47, 302.09]
 walk_power_mean = 154.68
 run_power_mean = 320.17
 
@@ -125,7 +125,7 @@ ax1.set_ylabel(
 )
 ax1.set_xticks(x)
 ax1.set_xticklabels(trials, fontsize=10, fontweight='bold')
-ax1.set_ylim(2.2, 9.2)
+ax1.set_ylim(2.2, 9.6)
 ax1.grid(True, linestyle='-', alpha=0.25)
 ax1.spines['top'].set_visible(False)
 ax1.spines['right'].set_visible(False)
@@ -203,7 +203,7 @@ for i, val in enumerate(run_power):
 # Hộp chú thích sự suy giảm công suất do cạn kiệt ATP-CP
 ax2.annotate(
     'Peak Output in Trial 1: $368.40\\,\\mathrm{W}$\nPlateaus at'
-    ' $\\sim\\!302.5\\,\\mathrm{W}$ in Trials 3–5 ($-17.9\\%$)',
+    ' $\\sim\\!302.1\\,\\mathrm{W}$ in Trials 3–5 ($-18.0\\%$)',
     xy=(0, 368.40),
     xytext=(1.9, 400),
     ha='center',
@@ -240,7 +240,7 @@ ax2.set_ylim(115, 445)
 ax2.grid(True, linestyle='-', alpha=0.25)
 ax2.spines['top'].set_visible(False)
 ax2.spines['right'].set_visible(False)
-ax2.legend(loc='lower right', frameon=True, fontsize=9.5)
+ax2.legend(loc='center right', frameon=True, fontsize=9.5, bbox_to_anchor=(1.0, 0.40))
 
 plt.tight_layout()
 plt.savefig('Fig_6_Trial_Power.png', dpi=300)
